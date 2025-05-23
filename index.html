@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Centro de Estética Láser especializado en depilación láser, SPA, rejuvenecimiento y más.">
+  <meta name="keywords" content="depilación láser, estética, SPA, rejuvenecimiento, fototerapia LED, peeling">
+  <title>Depilaser Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="logotipo.png" alt="Centro de Estética Láser">
+    <div class="logo-text">Depilaser Studio</div>
+  </div>
+
+
+
+  <!-- Menú de navegación -->
+<nav class="navbar">
+  <button class="Btn">Inicio</button>
+  <button class="Btn">Servicios</button>
+  <button class="Btn">Nosotros</button>
+  <button class="Btn">Contacto</button>
+</nav>
+
+
+
+<!-- Botón música -->
+<button id="music-toggle">
+  <img id="music-icon" src="sonido.png" alt="Música" />
+</button>
+
+<!-- Audio -->
+<audio id="background-music" loop>
+  <source src="pista1.mp3" type="audio/mpeg" />
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+
+</header>
+
+<main>
+<section class="seccion-inicio">
+  <img class="fondo-img" src="inicio.jpg" alt="Fondo" />
+    <!-- Imagen para móvil -->
+  <img class="fondo-img mobile" src="fondo.jpg" alt="Fondo móvil" />
+  <div class="capa-negra">
+    <div class="bienvenida-texto">
+        <h1>Este es tu espacio para cuidar, resaltar y transformar tu belleza</h1>
+        <p>Descubre una experiencia única en tratamientos estéticos, tecnología avanzada y atención personalizada.<br>
+        Agenda tu cita y transforma tu bienestar desde hoy.</p>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- SECCIÓN SERVICIOS -->
+
+<section id="servicios"class="seccion">
+  <img src="images3.jpeg" alt="Fondo decorativo" class="imagen-fondo">
+    <!-- Capa oscura encima de la imagen -->
+  <div class="fondo-negro"></div>
+  <!-- TÍTULO -->
+  <h2 class="titulo-servicios">Ofrecemos varios servicios para el cuidado de tu piel</h2>
+
+  <div class="tarjetas-wrapper">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>DEPILACIÓN TRI-LÁSER</h3>
+        </div>
+        <div class="flip-card-back">
+
+          <strong>Fotodepilación con triple longitud de onda</strong>
+          <div class="card__body">Eliminación progresiva del vello con Tri-láser, Diodo y Nd:YAG.</div>
+      
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>HOLLYWOOD PEELING</h3>
+        </div>
+        <div class="flip-card-back">
+  
+          <strong>Láser de carbono + láser Q-Switched</strong>
+          <div class="card__body">Tratamiento iluminador para pieles opacas con puntos negros y poros dilatados.</div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>TRATAMIENTOS CORPORALES</h3>
+        </div>
+        <div class="flip-card-back">
+      
+          <strong>Radiofrecuencia, cavitación y masajes reductores</strong>
+          <div class="card__body">Moldeo corporal, reducción de grasa localizada y celulitis.</div>
+  
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>REJUVENECIMIENTO LÁSER</h3>
+        </div>
+        <div class="flip-card-back">
+    
+          <strong>Láser fraccionado no ablativo</strong>
+          <div class="card__body">Disminución de líneas de expresión, poros y flacidez en rostro, cuello y manos.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>TRATAMIENTOS CAPILARES</h3>
+        </div>
+        <div class="flip-card-back">
+  
+          <strong>Plasma rico en plaquetas + láser capilar</strong>
+          <div class="card__body">Estimulación del crecimiento del cabello, prevención de caída.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>ELIMINACIÓN DE TATUAJES</h3>
+        </div>
+        <div class="flip-card-back">
+
+          <strong>Láser Q-Switched de alta potencia</strong>
+          <div class="card__body">Eliminación progresiva de tinta negra y de color en distintas capas dérmicas.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>DESPIGMENTACIÓN CON LÁSER</h3>
+        </div>
+        <div class="flip-card-back">
+        
+          <strong>Destrucción selectiva de melanina con láser</strong>
+          <div class="card__body">Eliminación de manchas solares, melasma y lentigos.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h3>BLANQUEAMIENTO GENITAL Y AXILAR</h3>
+        </div>
+        <div class="flip-card-back">
+      
+          <strong>Tratamiento láser</strong>
+          <div class="card__body">Unificación del tono de la piel en zonas íntimas, segura y progresiva.</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+  <!-- Sección de Planes -->
+    <section id="planes" class="seccion">
+      <h2>Nuestros Planes y Combos</h2>
+      <p>Ofrecemos una amplia gama de tratamientos estéticos y terapéuticos diseñados para resaltar tu belleza natural, cuidar tu piel y ayudarte a sentirte increíble. ¡Conoce todos nuestros servicios y elige el que más se adapte a tus objetivos!</p>
+
+      <div class="grid-container">
+        <!-- Planes Corporales -->
+        <div class="plan-category">
+          <h3>Planes Corporales</h3>
+          <ul>
+            <li>Maderoterapia</li>
+            <li>Masajes reductores</li>
+            <li>Vacuumterapia</li>
+            <li>Gimnasia pasiva</li>
+            <li>Carboxiterapia</li>
+            <li>Tratamiento con cuatro quemadores</li>
+          </ul>
+          <p>Ideales para mejorar la circulación, tonificar tu cuerpo y eliminar toxinas.</p>
+        </div>
+
+        <!-- Depilación por zonas -->
+        <div class="plan-category">
+          <h3>Depilación por Zonas</h3>
+          <ul>
+            <li>Media pierna</li>
+            <li>Pierna completa</li>
+            <li>Axilas</li>
+            <li>Entrepiernas</li>
+            <li>Cuello</li>
+            <li>Codos</li>
+          </ul>
+          <h4>Combinados:</h4>
+          <ul>
+            <li>Axilas + Bikini Brasileño</li>
+            <li>Axilas + Zona íntima completa</li>
+          </ul>
+
+        </div>
+
+        <!-- Tratamientos Faciales -->
+        <div class="plan-category">
+          <h3>Tratamientos Faciales</h3>
+          <ul>
+            <li>Limpieza facial profunda</li>
+            <li>Mascarilla con ácido hialurónico</li>
+            <li>Microdermoabrasión</li>
+            <li>Máscara LED rejuvenecedora</li>
+          </ul>
+          <p>El cuidado que tu piel necesita, con resultados visibles desde la primera sesión.</p>
+        </div>
+
+</section>
+
+
+
+<section id="agendar" style="background-image: url('a.avif');" class="seccion">
+
+  <!-- ✅ TÍTULO SUPERIOR VISIBLE -->
+  <div class="titulo-superior">
+    <h2>Estás a un paso de tu mejor versión</h2>
+  </div>
+
+  <div class="overlay">
+    <!-- Caja fija a la izquierda -->
+    <div class="fondo-diagrama-izquierda">
+      <h2 class="oferta-porcentaje">
+  <span class="solo-cincuenta">50%</span> OFF en depilación tri-láser
+</h2>
+
+      <p class="oferta-detalle">¡Elimina el vello de forma rápida, segura y duradera con la última tecnología!</p>
+      <button class="btn-reservar" onclick="abrirFormulario()">Reservar ahora</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal de formulario -->
+<div id="formularioModal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarFormulario()">×</span>
+    <form id="formReserva">
+      <h2>Reserva tu cita</h2>
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <select name="tratamiento" required>
+        <option value="">Selecciona un tratamiento</option>
+        <option>Depilación tri-láser</option>
+        <option>Hollywood peeling</option>
+        <option>Tratamientos corporales</option>
+        <option>Rejuvenecimiento láser</option>
+        <option>Tratamientos capilares</option>
+        <option>Despigmentación láser</option>
+        <option>Blanqueamientos axilar / genital</option>
+        <option>Eliminación de tatuajes</option>
+      </select>
+      <input type="date" name="fecha" required>
+     <select name="hora" id="hora" required>
+  <option value="" disabled selected>Selecciona una hora</option>
+  <option value="08:30">08:30 AM</option>
+  <option value="09:00">09:00 AM</option>
+  <option value="09:30">09:30 AM</option>
+  <option value="10:00">10:00 AM</option>
+  <option value="10:30">10:30 AM</option>
+  <option value="11:00">11:00 AM</option>
+  <option value="11:30">11:30 AM</option>
+  <option value="12:00">12:00 PM</option>
+  <option value="12:30">12:30 PM</option>
+  <option value="13:00">01:00 PM</option>
+  <option value="13:30">01:30 PM</option>
+  <option value="14:00">02:00 PM</option>
+  <option value="14:30">02:30 PM</option>
+  <option value="15:00">03:00 PM</option>
+  <option value="15:30">03:30 PM</option>
+  <option value="16:00">04:00 PM</option>
+  <option value="16:30">04:30 PM</option>
+  <option value="17:00">05:00 PM</option>
+  <option value="17:30">05:30 PM</option>
+      <input type="email" name="email" placeholder="Correo electrónico">
+      <input type="tel" name="celular" placeholder="Celular">
+      <button type="submit">Enviar reserva</button>
+      </select>
+    </form>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonios en Video -->
+<section id="testimonios-video" class="seccion">
+  <h2>Resultados y opiniones respaldadas por nuestros pacientes</h2>
+  <div class="video-container">
+  
+    <div class="video-card">
+      <video controls>
+        <source src="evidencia1.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <p>Confianza</p>
+    </div>
+
+    <div class="video-card">
+      <video controls>
+        <source src="evidencia2.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <p>Efectividad</p>
+    </div>
+
+    <div class="video-card">
+      <video controls>
+        <source src="evidencia3.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+      <p>Profesionalismo</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Sección combinada FAQ + Antes y Después -->
+
+<section id="faq-y-evidencias" class="seccion-preguntas" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem; align-items: flex-start; justify-content: center;">
+
+
+  <!-- Preguntas Frecuentes -->
+  <div class="faq-container" style="flex: 1 1 45%; min-width: 300px;">
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Duele el tratamiento de depilación láser?</button>
+      <div class="faq-answer">
+        <p>La mayoría de nuestros clientes describen una sensación de ligero calor o pequeños pinchazos, pero el tratamiento es bien tolerado gracias a nuestros equipos de última generación.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Cuántas sesiones necesito para ver resultados?</button>
+      <div class="faq-answer">
+        <p>Generalmente se necesitan entre 6 y 8 sesiones para obtener resultados óptimos, dependiendo de tu tipo de piel y vello.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Puedo exponerme al sol después del tratamiento?</button>
+      <div class="faq-answer">
+        <p>Se recomienda evitar la exposición solar directa al menos 48 horas después de cada sesión para proteger tu piel y obtener mejores resultados.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">¿Qué cuidados debo tener antes de la depilación láser?</button>
+      <div class="faq-answer">
+        <p>Debes evitar el uso de cera o pinzas un mes antes del tratamiento y rasurar la zona a tratar 24 horas antes de la sesión.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Sección Ubicación -->
+<section id="ubicacion-elegante">
+  <div class="ubicacion-contenedor">
+
+    <!-- Imagen a la izquierda -->
+    <div class="ubicacion-imagen">
+      <img src="oficinas.png" alt="Ubicación Clínica" />
+    </div>
+
+    <!-- Texto y Mapa a la derecha -->
+    <div class="ubicacion-info">
+      <h2>Dónde Estamos</h2>
+      <p>Guayaquil - Edificio Blue Center, Piso 3, Oficina 21</p>
+      <div class="mapa-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0022691300956!2d-79.90314362542553!3d-2.1528158978280323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6d8083ce9715%3A0xe98b84b85caf3703!2sBlue%20Center!5e0!3m2!1ses-419!2sec!4v1745719837123!5m2!1ses-419!2sec"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Sección redes sociales -->
+<!-- Enlace a Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+<div class="card">
+  <ul>
+    <li class="iso-pro">
+      <span></span><span></span><span></span>
+      <a href="https://www.facebook.com/depilaserstudio?locale=es_LA" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 320 512">
+          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+        </svg>
+      </a>
+      <div class="text">Facebook</div>
+    </li>
+
+    <li class="iso-pro">
+      <span></span><span></span><span></span>
+      <a href="https://www.tiktok.com/@depilaserstudio" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg" viewBox="0 0 448 512">
+          <path d="M448,209.8c-36.2,0-70.1-11.5-98-30.9v138.7c0,97.2-79.4,176.6-176.6,176.6S0.8,414.8,0.8,317.6S80.2,141,177.4,141c7.7,0,15.1,0.6,22.4,1.8v94.3c-7.1-1.9-14.6-2.9-22.4-2.9c-48.6,0-88,39.4-88,88s39.4,88,88,88s88-39.4,88-88V0.3h97.8C374.9,63.5,406.7,109.9,448,130.3V209.8z"/>
+        </svg>
+      </a>
+      <div class="text">TikTok</div>
+    </li>
+
+    <li class="iso-pro">
+      <span></span><span></span><span></span>
+      <a href="https://www.instagram.com/depilaserstudio/" target="_blank">
+        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" class="svg">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+      </a>
+      <div class="text">Instagram</div>
+    </li>
+
+  
+    <li class="iso-pro">
+      <span></span><span></span><span></span>
+      <a href="https://wa.me/593968823182" target="_blank">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path d="M380.9 97.1C339 55.2 283.1 32 224.1 32c-114.9 0-208 93.1-208 208 0 36.7 9.6 72.4 27.9 104L7.4 470.1c-2.2 6.5-0.4 13.7 4.7 18.5 3.7 3.5 8.5 5.4 13.3 5.4 2 0 4.1-.3 6.1-1.1l112.2-40.7c29.1 15.8 61.9 24.2 95.4 24.2h.1c114.9 0 208-93.1 208-208 .1-55.5-21.5-107.6-60.9-146.3zM224.1 438c-29.2 0-58-7.9-83.1-22.8l-5.9-3.5-66.5 24.1 23.1-64-4.3-6.6c-18.5-28.6-28.3-61.7-28.3-95.5 0-97 79-176 176-176 47 0 91.1 18.3 124.3 51.5 33.1 33.1 51.3 77.2 51.2 124.2-.1 97-79.1 176.1-176.5 176.1zm101.1-138.3c-5.5-2.8-32.7-16.1-37.8-17.9-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.5-14.3 17.9-17.5 21.6-3.2 3.7-6.4 4.2-11.9 1.4-32.4-16.2-53.7-28.9-75.2-65.3-5.7-9.8 5.7-9.1 16.2-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30-17.1-41.1-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.5-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.7 57.4 2.8 3.7 39.2 59.8 95 83.9 13.3 5.8 23.6 9.3 31.7 11.9 13.3 4.2 25.4 3.6 35-2.2 10.7-6.4 33-32.2 33.6-42.3.5-10 .5-18.3-5-21.1z"/>
+        </svg>
+      </a>
+      <div class="text">WhatsApp</div>
+    </li>
+
+  </ul>
+</div>
+
+</body>
+</html>
